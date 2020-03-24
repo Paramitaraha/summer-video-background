@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    color: rgb(5, 43, 7);
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    min-height: 5vh;
+    padding: 1rem;
+    background: rgb(74, 167, 100);
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+}
+ul li{
+    list-style: none;
+}
+ul li a {
+    padding: 5px;
+    transition: all ease-in 100ms;
+}
+ul li a:hover {
+    border-bottom: 2px solid brown;
+    background: goldenrod;
+}
+.hero{
+    min-height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(194, 238, 196);
+        
+}
+
+.hero h2{
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+}
+.hero button{
+    padding: 1rem 2rem;
+    background: rgb(128, 185, 63);
+    border: rgb(112, 112, 33);
+    font-size: 1rem;
+}
+
+
+.hero button:hover{
+    color: magenta;
+}
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(235, 209, 229);
+    min-height: 70vh;
+   
+
+}
+.intro-text{
+    flex: 1 ;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start; 
+    
+}
+.intro-video{
+    flex: 1 ;
+    
+}
+
+.intro-video video{
+    width: 100%;
+    height: 100%;
+}
+
+.intro-text {
+    padding: 1rem;
+}
+.intro-text h2{
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.intro-text p{
+    padding: 1rem;
+    font-size: 2rem;
+}
+footer {
+    background: rgb(175, 212, 175);
+    min-height: 6vh;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+footer span {
+    color: firebrick;
+}
+@media(max-width: 985px){
+    .intro{
+        flex-direction: column;
+    }
+    .intro-text {
+        padding: 1rem;
+    }
+}
+@media(max-width: 550px){
+    nav ul {
+        flex-direction: column;
+        font-weight: bold;
+    }
+    .hero button {
+        font-size: 1rem;
+    }
+    .intro-text h2 {
+        text-align: center;
+    }
+}
